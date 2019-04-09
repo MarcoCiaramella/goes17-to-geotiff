@@ -1,2 +1,2 @@
 # goes17-to-geotiff
-Convert goes17 data in netcdf format to geotiff
+Python library to convert goes17 data in netCDF format to geotiff raster format
