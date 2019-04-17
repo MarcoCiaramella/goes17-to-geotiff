@@ -43,7 +43,7 @@ class Goes17Reader:
         current shape = (5424, 5424)
         filling on"""
         rad = ncr.readVar(self.dataset,'Rad')
-        self.rad = rad[:]*rad.scale_factor + rad.add_offset
+        self.rad = rad[:]
         self.rad = np.flip(self.rad, 1)
         self.rad = np.rot90(self.rad, 2)
         self.dy = self.rad.shape[0]
